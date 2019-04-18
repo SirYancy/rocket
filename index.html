@@ -20,14 +20,14 @@ img {
 <script>
 var images = ["rocket0.jpg", "rocket1.jpg"];
 function displayImage(){
-	var num = Math.floor(Math.random() * 1);
+	var num = Math.floor(Math.random() * 2);
 	document.getElementById("rocket_image").src = images[num];
 }
 </script>
 
     <title>Rocket</title>
   </head>
-  <body>
+  <body onload="displayImage()">
       <div class="container">
           <header><h1>Rocket!</h1></header>
 
